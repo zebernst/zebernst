@@ -1,17 +1,67 @@
----
+# Visit https://github.com/lowlighter/metrics#-documentation for full reference
 name: Metrics
 on:
-  schedule: 
-  - cron: "0 0 * * *"
+  # Schedule updates (each hour)
+  schedule: [{cron: "0 * * * *"}]
+  # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
-  push: 
-    branches: ["main"]
+  push: {branches: ["master", "main"]}
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
+      - name: Generate Token
+        uses: actions/create-github-app-token@v1
+        id: app-token
+        with:
+          app-id: "${{ secrets.BOT_APP_ID }}"
+          private-key: "${{ secrets.BOT_APP_PRIVATE_KEY }}"
+
       - uses: lowlighter/metrics@latest
         with:
+          # Your GitHub token
+          # The following scopes are required:
+          #  - public_access (default scope)
+          # The following additional scopes may be required:
+          #  - read:org      (for organization related metrics)
+          #  - read:user     (for user related data)
+          #  - read:packages (for some packages related data)
+          #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
+
+          # Options
+          user: zebernst
+          template: classic
+          
+          base: header, activity, community, repositories, metadata
+          base_indepth: true
+          repositories_affiliations: owner, collaborator
+          
+          config_timezone: America/New_York
+          config_order: "" # default
+
+          committer_token: ${{ steps.app-token.outputs.token }}
+
+          retries: 3
+          retries_delay: 300
+          retries_output_action: 5
+          retries_delay_output_action: 120
+          
+          plugin_followup: yes
+          plugin_followup_archived: yes
+          plugin_followup_sections: repositories, user
+          plugin_followup_indepth: yes
+
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_analysis_timeout_repositories: 7.5
+          plugin_languages_categories: markup, programming
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          plugin_languages_recent_categories: markup, programming
+          plugin_languages_recent_days: 14
+          plugin_languages_recent_load: 300
+          plugin_languages_sections: most-used
+          plugin_languages_threshold: 0%  

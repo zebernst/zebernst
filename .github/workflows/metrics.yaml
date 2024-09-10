@@ -31,20 +31,23 @@ jobs:
           #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
 
-          # Options
-          user: zebernst
-          template: classic
-          
-          base: header, activity, community, repositories, metadata
-          base_indepth: true
-          repositories_affiliations: owner, collaborator
-          
+          # Core
+          filename: metrics/light.svg
           config_timezone: America/New_York
-          config_order: "" # default
-
           committer_token: ${{ steps.app-token.outputs.token }}
+          committer_message: |
+            chore: update light metrics
 
-          retries: 3
-          retries_delay: 300
-          retries_output_action: 5
-          retries_delay_output_action: 120
+            [no ci]
+          
+          # Display
+          template: classic
+          base: header, activity, community
+          base_indepth: true
+          config_animations: yes
+          
+          # Options
+          plugin_languages: yes
+          plugin_followup: yes
+          plugin_followup_sections: user
+          

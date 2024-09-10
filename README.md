@@ -16,5 +16,5 @@ Here are some ideas to get you started:
 -->
 
 <picture>
-  <img src="/github-metrics.svg" alt="Metrics">
+  <img src="/metrics/light.svg" alt="Metrics">
 </picture>

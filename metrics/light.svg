@@ -41,7 +41,7 @@
                                     <rect class="day" x="120" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                     <rect class="day" x="135" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                     <rect class="day" x="150" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
-                                    <rect class="day" x="165" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
+                                    <rect class="day" x="165" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="180" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
                                     <rect class="day" x="195" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                 </g>
@@ -69,7 +69,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            805 Commits
+                            811 Commits
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -255,14 +255,14 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="203.84493282977647" height="8" fill="#cb171e"/>
-                    <rect mask="url(#languages-bar)" x="203.84493282977647" y="0" width="80.55328155014415" height="8" fill="#3D6117"/>
-                    <rect mask="url(#languages-bar)" x="284.3982143799206" y="0" width="75.43675385813722" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="359.83496823805785" y="0" width="29.261313737233934" height="8" fill="#4F5D95"/>
-                    <rect mask="url(#languages-bar)" x="389.0962819752918" y="0" width="28.022241117672795" height="8" fill="#663399"/>
-                    <rect mask="url(#languages-bar)" x="417.11852309296455" y="0" width="21.070301420365503" height="8" fill="#e34c26"/>
-                    <rect mask="url(#languages-bar)" x="438.18882451333013" y="0" width="14.223996946384847" height="8" fill="#b07219"/>
-                    <rect mask="url(#languages-bar)" x="452.4128214597149" y="0" width="7.587178540285067" height="8" fill="#89e051"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="203.80776503615442" height="8" fill="#cb171e"/>
+                    <rect mask="url(#languages-bar)" x="203.80776503615442" y="0" width="80.56496973487268" height="8" fill="#3D6117"/>
+                    <rect mask="url(#languages-bar)" x="284.3727347710271" y="0" width="75.44769964082228" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="359.82043441184936" y="0" width="29.265559518830642" height="8" fill="#4F5D95"/>
+                    <rect mask="url(#languages-bar)" x="389.08599393068005" y="0" width="28.026307111315614" height="8" fill="#663399"/>
+                    <rect mask="url(#languages-bar)" x="417.11230104199564" y="0" width="21.073358695879893" height="8" fill="#e34c26"/>
+                    <rect mask="url(#languages-bar)" x="438.18565973787554" y="0" width="14.226060831315271" height="8" fill="#b07219"/>
+                    <rect mask="url(#languages-bar)" x="452.4117205691908" y="0" width="7.588279430809209" height="8" fill="#89e051"/>
                 </svg>
                 <div class="field center horizontal-wrap fill-width">
                     <div class="field center no-wrap language">
